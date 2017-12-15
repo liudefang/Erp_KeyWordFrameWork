@@ -59,7 +59,7 @@ def writeTestResult(sheetObj,rowNo,colsNo,testResult,errorInfo = None,picPath = 
 
 
 def TestBuydetail():
-    logging.info("erp系统关键字驱动测试开始...")
+    logging.info('"erp系统关键字驱动测试开始..."')
     try:
         #根据excel文件中sheet名称获取此sheet对象
         caseSheet = excelObj.getSheetByName("测试用例")
@@ -90,7 +90,7 @@ def TestBuydetail():
                 #print(stepNum)
                 #记录测试用例i的步骤成功数
                 successfulSteps = 0
-                logging.info("开始执行用例%s" %caseRow[testCase_testCaseName-1].value)
+                logging.info('"开始执行用例%s"' %caseRow[testCase_testCaseName-1].value)
                 for step in xrange(2,stepNum + 1):
                     #因为步骤sheet中的第一行为标题行，无须执行
                     #获取步骤sheet中第step行对象
@@ -120,7 +120,7 @@ def TestBuydetail():
                     elif keyWord and locationType and operateValue and locatorExpression is None:
                         expressionStr = keyWord.strip() + "('"+locationType.strip() +"','"+operateValue+"')"
                     elif keyWord and locationType and locatorExpression and operateValue:
-                        expressionStr = keyWord.strip() + "("+locationType.strip() +",'"+ \
+                        expressionStr = keyWord.strip() + "('"+locationType.strip() +"','"+ \
                             locatorExpression.replace("'",'"').strip() + \
                             "',u'" + operateValue + "')"
                     elif keyWord and locationType and locatorExpression \
@@ -148,13 +148,13 @@ def TestBuydetail():
                         writeTestResult(
                             stepSheet,step,"caseStep","Faild",errorInfo,capturePic
                         )
-                        logging.info("步骤%s执行失败！" %stepRow[testStep_testStepDescribe-1].value)
+                        logging.info('"步骤%s执行失败！"' %stepRow[testStep_testStepDescribe-1].value)
                     else:
                         #在测试步骤sheet中写入成功信息
                         writeTestResult(stepSheet,step,"caseStep","Pass")
                         #每成功一步，successfulSteps变量自增1
                         successfulSteps +=1
-                        logging.info("步骤%s执行通过" %stepRow[testStep_testStepDescribe - 1].value)
+                        logging.info('"步骤%s执行通过!"' %stepRow[testStep_testStepDescribe - 1].value)
             if successfulSteps == stepNum - 1:
                 #当测试用例步骤sheet中所有的步骤都执行成功，方认为此测试用例执行通过，然后将成功
                 #信息写入测试用例工作表中，否则写入失败信息

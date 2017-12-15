@@ -1,29 +1,264 @@
-2017-12-15 10:20:29 TestBuydetail.py[line:62] INFO126邮箱添加联系人数据驱动测试开始...
-2017-12-15 10:20:29 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
-2017-12-15 10:20:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:49246/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
-2017-12-15 10:20:34 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:34 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/screenshot {"sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:35 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:35 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
-2017-12-15 10:20:35 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:36 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:36 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
-2017-12-15 10:20:36 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/window/current/maximize {"windowHandle": "current", "sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:37 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:37 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
-2017-12-15 10:20:42 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
-2017-12-15 10:20:42 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/source {"sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:42 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:43 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
-2017-12-15 10:20:43 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/screenshot {"sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:43 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:43 TestBuydetail.py[line:151] INFO步骤输入用户名执行失败！
-2017-12-15 10:20:43 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/screenshot {"sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:44 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:44 TestBuydetail.py[line:151] INFO步骤输入密码执行失败！
-2017-12-15 10:20:44 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:44 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:44 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:49246/session/60811a926a742aca4b88fffdc59e8bc6/element/0.8053929426582702-1/click {"id": "0.8053929426582702-1", "sessionId": "60811a926a742aca4b88fffdc59e8bc6"}
-2017-12-15 10:20:44 remote_connection.py[line:561] DEBUGFinished Request
-2017-12-15 10:20:45 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
-2017-12-15 10:20:45 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:43:00 TestBuydetail.py[line:62] INFOerp系统关键字驱动测试开始...
+2017-12-15 12:43:00 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:43:02 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:43:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:05 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/screenshot {"sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:05 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:43:05 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:06 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:07 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:43:07 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/window/current/maximize {"windowHandle": "current", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:08 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:08 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:43:13 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/source {"sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element/0.9347665955495326-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.9347665955495326-1", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element/0.9347665955495326-2/value {"text": "123", "value": ["1", "2", "3"], "id": "0.9347665955495326-2", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56177/session/66e7104d868f62e2274c1f083c311d2f/element/0.9347665955495326-3/click {"id": "0.9347665955495326-3", "sessionId": "66e7104d868f62e2274c1f083c311d2f"}
+2017-12-15 12:43:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:43:14 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:43:14 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:44:01 TestBuydetail.py[line:62] INFOerp系统关键字驱动测试开始...
+2017-12-15 12:44:01 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:44:03 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:44:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:05 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/screenshot {"sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:06 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:44:06 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:06 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:07 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:44:07 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/window/current/maximize {"windowHandle": "current", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:08 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:08 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:44:13 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:44:13 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/source {"sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:13 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:44:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element/0.6563614692817206-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.6563614692817206-1", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:13 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:44:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element/0.6563614692817206-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.6563614692817206-2", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:14 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:44:14 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:14 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56249/session/0761b31a297361eac0cede62336b364d/element/0.6563614692817206-3/click {"id": "0.6563614692817206-3", "sessionId": "0761b31a297361eac0cede62336b364d"}
+2017-12-15 12:44:18 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:44:18 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:44:18 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:50:09 TestBuydetail.py[line:62] INFOerp系统关键字驱动测试开始...
+2017-12-15 12:50:09 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:50:11 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:50:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:14 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/screenshot {"sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:15 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:50:15 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:16 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:50:16 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/window/current/maximize {"windowHandle": "current", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:17 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:50:22 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:50:22 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/source {"sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:22 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:50:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element/0.9209981584491738-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.9209981584491738-1", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:22 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:50:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element/0.9209981584491738-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.9209981584491738-2", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:23 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:50:23 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:23 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:23 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56451/session/cbd9911a84103154a98abccf0e85cdb7/element/0.9209981584491738-3/click {"id": "0.9209981584491738-3", "sessionId": "cbd9911a84103154a98abccf0e85cdb7"}
+2017-12-15 12:50:27 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:50:27 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:50:27 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:52:20 TestBuydetail.py[line:62] INFOerp系统关键字驱动测试开始...
+2017-12-15 12:52:20 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:52:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:52:24 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:24 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/screenshot {"sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:25 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:52:25 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:26 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:26 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:52:26 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/window/current/maximize {"windowHandle": "current", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:27 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:27 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:52:32 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:52:32 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/source {"sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:32 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:52:32 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:32 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element/0.48065353391858623-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.48065353391858623-1", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:33 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:52:33 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:33 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:33 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element/0.48065353391858623-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.48065353391858623-2", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:33 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:33 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:52:33 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:33 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:33 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56542/session/bffcbe527754637ad63c10a99c78296c/element/0.48065353391858623-3/click {"id": "0.48065353391858623-3", "sessionId": "bffcbe527754637ad63c10a99c78296c"}
+2017-12-15 12:52:36 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:52:37 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:52:37 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:53:21 TestBuydetail.py[line:62] INFO"erp系统关键字驱动测试开始..."
+2017-12-15 12:53:21 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:53:24 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:53:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:31 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/screenshot {"sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:31 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:53:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:32 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:53:32 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/window/current/maximize {"windowHandle": "current", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:34 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:34 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:53:39 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/source {"sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element/0.8321962001123349-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.8321962001123349-1", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element/0.8321962001123349-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.8321962001123349-2", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56599/session/4aa50cad2e35fa3438a9edd91282aa5c/element/0.8321962001123349-3/click {"id": "0.8321962001123349-3", "sessionId": "4aa50cad2e35fa3438a9edd91282aa5c"}
+2017-12-15 12:53:43 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:53:43 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:53:43 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 12:55:25 TestBuydetail.py[line:62] INFO"erp系统关键字驱动测试开始..."
+2017-12-15 12:55:25 TestBuydetail.py[line:93] INFO开始执行用例登录erp系统
+2017-12-15 12:55:27 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 12:55:29 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:29 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/screenshot {"sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:30 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:30 TestBuydetail.py[line:151] INFO步骤打开浏览器执行失败！
+2017-12-15 12:55:30 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:31 TestBuydetail.py[line:157] INFO步骤打开URL地址执行通过
+2017-12-15 12:55:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/window/current/maximize {"windowHandle": "current", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:32 TestBuydetail.py[line:157] INFO步骤浏览器最大化执行通过
+2017-12-15 12:55:37 TestBuydetail.py[line:157] INFO步骤等待5秒执行通过
+2017-12-15 12:55:37 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/source {"sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:37 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 TestBuydetail.py[line:157] INFO步骤判断浏览器的标题执行通过
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element/0.6697940126777098-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.6697940126777098-1", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 TestBuydetail.py[line:157] INFO步骤输入用户名执行通过
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element/0.6697940126777098-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.6697940126777098-2", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 TestBuydetail.py[line:157] INFO步骤输入密码执行通过
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:56702/session/eccbf013cd94f73158f7c956822584f5/element/0.6697940126777098-3/click {"id": "0.6697940126777098-3", "sessionId": "eccbf013cd94f73158f7c956822584f5"}
+2017-12-15 12:55:42 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 12:55:42 TestBuydetail.py[line:157] INFO步骤点击登录按钮执行通过
+2017-12-15 12:55:42 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 13:37:06 TestBuydetail.py[line:62] INFO"erp系统关键字驱动测试开始..."
+2017-12-15 13:37:06 TestBuydetail.py[line:93] INFO"开始执行用例登录erp系统"
+2017-12-15 13:37:08 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 13:37:12 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:12 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/screenshot {"sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:13 TestBuydetail.py[line:151] INFO"步骤打开浏览器执行失败！"
+2017-12-15 13:37:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:14 TestBuydetail.py[line:157] INFO"步骤打开URL地址执行通过!"
+2017-12-15 13:37:14 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/window/current/maximize {"windowHandle": "current", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:15 TestBuydetail.py[line:157] INFO"步骤浏览器最大化执行通过!"
+2017-12-15 13:37:21 TestBuydetail.py[line:157] INFO"步骤等待5秒执行通过!"
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/source {"sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 TestBuydetail.py[line:157] INFO"步骤判断浏览器的标题执行通过!"
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element/0.26286982164623196-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.26286982164623196-1", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 TestBuydetail.py[line:157] INFO"步骤输入用户名执行通过!"
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element/0.26286982164623196-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.26286982164623196-2", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 TestBuydetail.py[line:157] INFO"步骤输入密码执行通过!"
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:21 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:57702/session/8be29eb1312e52b3bd7945657fb81369/element/0.26286982164623196-3/click {"id": "0.26286982164623196-3", "sessionId": "8be29eb1312e52b3bd7945657fb81369"}
+2017-12-15 13:37:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 13:37:25 TestBuydetail.py[line:157] INFO"步骤点击登录按钮执行通过!"
+2017-12-15 13:37:26 TestBuydetail.py[line:165] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 13:38:31 TestBuydetail.py[line:62] INFO "erp系统关键字驱动测试开始..."
+2017-12-15 13:38:31 TestBuydetail.py[line:93] INFO "开始执行用例登录erp系统"
+2017-12-15 13:38:33 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 13:38:35 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:35 remote_connection.py[line:474] DEBUG GET http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/screenshot {"sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:36 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:36 TestBuydetail.py[line:151] INFO "步骤打开浏览器执行失败！"
+2017-12-15 13:38:36 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/url {"url": "http://10.1.2.58:8080/login.jsp", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:36 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:37 TestBuydetail.py[line:157] INFO "步骤打开URL地址执行通过!"
+2017-12-15 13:38:37 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/window/current/maximize {"windowHandle": "current", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:38 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:38 TestBuydetail.py[line:157] INFO "步骤浏览器最大化执行通过!"
+2017-12-15 13:38:43 TestBuydetail.py[line:157] INFO "步骤等待5秒执行通过!"
+2017-12-15 13:38:43 remote_connection.py[line:474] DEBUG GET http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/source {"sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:43 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:43 TestBuydetail.py[line:157] INFO "步骤判断浏览器的标题执行通过!"
+2017-12-15 13:38:43 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element {"using": "xpath", "value": "//*[@name=\"username\"]", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:43 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:43 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element/0.32833084495491005-1/value {"text": "defang1", "value": ["d", "e", "f", "a", "n", "g", "1"], "id": "0.32833084495491005-1", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:43 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:43 TestBuydetail.py[line:157] INFO "步骤输入用户名执行通过!"
+2017-12-15 13:38:43 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element {"using": "xpath", "value": "//*[@name=\"password\"]", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:43 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:43 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element/0.32833084495491005-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.32833084495491005-2", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:43 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:44 TestBuydetail.py[line:157] INFO "步骤输入密码执行通过!"
+2017-12-15 13:38:44 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element {"using": "xpath", "value": "//*[@class=\"submit_wrap\"]", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:44 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:44 remote_connection.py[line:474] DEBUG POST http://127.0.0.1:57780/session/3ca71f64d8232e5837d2c831373563c6/element/0.32833084495491005-3/click {"id": "0.32833084495491005-3", "sessionId": "3ca71f64d8232e5837d2c831373563c6"}
+2017-12-15 13:38:48 remote_connection.py[line:561] DEBUG Finished Request
+2017-12-15 13:38:48 TestBuydetail.py[line:157] INFO "步骤点击登录按钮执行通过!"
+2017-12-15 13:38:48 TestBuydetail.py[line:165] INFO 共2条用例,1条需要被执行，本次执行通过0条.
