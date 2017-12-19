@@ -63,12 +63,18 @@ def TestBuydetail():
     try:
         #根据excel文件中sheet名称获取此sheet对象
         caseSheet = excelObj.getSheetByName("测试用例")
-        #获取126账号sheet中是否执行行列
+        #获取登录sheet中是否执行行列
         isExecuteColumn = excelObj.getColumn(caseSheet,testCase_isExecute)
         #记录执行成功的测试用例个数
         successfulCase = 0
         #记录需要执行的测试用例个数
         requiredCase = 0
+        # 记录测试用例i的步骤成功数
+        successfulSteps = 0
+        # 记录测试用例i的步骤失败数
+        failfulSteps = 0
+
+        stepNum = 0
 
 
         for idx, i in enumerate(isExecuteColumn[1:]):
@@ -88,9 +94,11 @@ def TestBuydetail():
                 #获取步骤sheet中步骤数
                 stepNum = excelObj.getRowsNumber(stepSheet)
                 #print(stepNum)
-                #记录测试用例i的步骤成功数
-                successfulSteps = 0
+
+
+
                 logging.info('"开始执行用例%s"' %caseRow[testCase_testCaseName-1].value)
+                logging.info('"测试用例共%s步:"' %stepNum)
                 for step in xrange(2,stepNum + 1):
                     #因为步骤sheet中的第一行为标题行，无须执行
                     #获取步骤sheet中第step行对象
@@ -147,7 +155,9 @@ def TestBuydetail():
                         #在测试步骤sheet中写入失败信息
                         writeTestResult(
                             stepSheet,step,"caseStep","Faild",errorInfo,capturePic
+
                         )
+                        failfulSteps += 1
                         logging.info('"步骤%s执行失败！"' %stepRow[testStep_testStepDescribe-1].value)
                     else:
                         #在测试步骤sheet中写入成功信息
@@ -162,7 +172,7 @@ def TestBuydetail():
                 successfulCase += 1
             else:
                 writeTestResult(caseSheet,idx+2,"testCase","Faild")
-        logging.info("共%d条用例,%d条需要被执行，本次执行通过%d条." %(len(isExecuteColumn)-1,requiredCase,successfulCase))
+        logging.info('"共%d条用例,%d条需要被执行，本次执行通过%d条,本次执行通过的步骤数%d步,本次执行失败的步骤数%d步."' %(len(isExecuteColumn)-1,requiredCase,successfulCase,successfulSteps,failfulSteps))
     except Exception as e:
         #打印详细的异常堆栈信息
         print(traceback.print_exc())

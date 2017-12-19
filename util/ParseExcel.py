@@ -151,23 +151,7 @@ class ParseExcel(object):
         else:
             raise Exception("Insufficient Coordinates of cell!")
 
-    if __name__ == '__main__':
-        pe = ParseExcel()
-        #测试所有的excel文件“126邮箱联系人.xlsx"请自行创建
-        pe.loadWorkBook('D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx')
-        print("通过名称获取sheet对象的名字：",pe.getSheetByName("联系人").title)
-        print("通过index序号获取sheet对象的名称：",pe.getSheetByIndex(0).title)
-        sheet = pe.getSheetByIndex(0)
-        print(type(sheet))
-        print(pe.getRowsNumber(sheet))  #获取最大行号
-        print(pe.getColsNumber(sheet))  #获取最大列号
-        rows = pe.getRow(sheet,1)     #获取第一行
-        for i in rows:
-            print(i.value)
-        #获取第一行第一列单元格内容
-        print(pe.getCellOfValue(sheet,rowNo=1,colsNo=1))
-        pe.writeCell(sheet,'我爱python',rowNo=10,colsNo=10)
-        pe.writeCellCurrentTime(sheet,rowNo =10,colsNO =11)
+
 
 
 

@@ -23,13 +23,3 @@ def getElements(driver,locateType,locatorExpression):
         raise e
 
 
-if __name__ == '___main__':
-
-    #进行单元测试
-    driver = webdriver.Chrome(executable_path="D:\\Python34\\chromedriver")
-    driver.get("http://www.baidu.com")
-    searchBox = getElement(driver,"id","kw")
-    #打印页面对象的标签名
-    aList = getElements(driver,"tag name","a")
-    print(len(aList))
-    driver.quit()

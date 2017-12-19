@@ -15,6 +15,7 @@ from util.ClipboardUtil import Clipboard
 from util.DirAndTime import getCurrentTime, createCurrentDateDir
 from util.KeyBoardUtil import KeyboardKeys
 from util.ObjectMap import getElement
+from util.WaitUtil import WaitUtil
 
 driver = None
 # 全局的等待类实例对象
@@ -25,7 +26,6 @@ def open_browser(browserName,*arg):
     global driver,waitUtil
     try:
         if browserName.lower() == 'ie':
-
             driver = webdriver.Ie(executable_path = ieDriverFilePath)
         elif browserName.lower() == 'chrome':
             #创建Chrome浏览器的一个options实例对象
@@ -40,7 +40,7 @@ def open_browser(browserName,*arg):
         else:
             driver = webdriver.Firefox(executable_path = firefoxDriverFilePath)
         #driver对象创建成果后，创建等待类实例对象
-        waitUtil = waitUtil(driver)
+        waitUtil = WaitUtil(driver)
     except Exception as e:
         raise e
 
@@ -110,6 +110,19 @@ def assert_title(titleStr,*arg):
     except Exception as e:
         raise e
 
+def assert_text(titleStr,*arg):
+    #断言页面标题是否存在给定的关键字符串
+    global driver
+    try:
+        aElement = driver.find_element_by_class_name("l-dialog-content")
+        a_text = aElement.text
+        #print("a_text:"+a_text)
+        assert titleStr in a_text,"%s not found in text!" %titleStr
+    except AssertionError as e:
+        raise AssertionError(e)
+    except Exception as e:
+        raise e
+
 def getTitle(*arg):
     #获取页面标题
     global driver
@@ -126,12 +139,24 @@ def getPageSoure(*arg):
     except Exception as e:
         raise e
 
+def getText(*arg):
+    #获取页面文本信息
+    global driver
+    try:
+        aElement = driver.find_element_by_class_name("l-dialog-content")
+        a_text = aElement.text
+        print("a_text:" + a_text)
+        return aElement.text
+    except Exception as e:
+        raise e
+
 def switch_to_frame(locationTpye,frameLocatorExpression,*arg):
     #切换进入frame
     global driver
     try:
-        driver.switch_to_frame(driver, locationTpye, frameLocatorExpression).click()
+        driver.switch_to.frame(getElement(driver,locationTpye,frameLocatorExpression))
     except Exception as e:
+        print("frame error")
         raise  e
 
 def switch_to_default_content(*arg):
@@ -188,18 +213,18 @@ def capture_screen(*args):
         return picNameAndPath
 def waitPresenceOfElementLocated(locationTpye,locatorExpression,*arg):
     '''显式等待页面元素出现在dom中，但并不一定可见
-    村则返回改页面元素对象'''
+    则返回改页面元素对象'''
     global driver
     try:
         waitUtil.presenceOfElementLocated(locationTpye,locatorExpression)
     except Exception as e:
         raise e
 
-def waitFrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg):
+def waitFrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*args):
     '''检查frame是否存在，存在则切换进frame控件中'''
     global waitUtil
     try:
-        waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+        waitUtil.frameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression)
     except Exception as e:
         raise e
 
@@ -211,3 +236,19 @@ def waitVisibilityOfElementLocated(locationTpye,locatorExpression,*args):
     except Exception as e:
         raise e
 
+def current_window_handle(*args):
+    global driver
+    try:
+        #  得到当前窗口的句柄
+        now_handle = driver.current_window_handle
+        #print("当前窗口句柄：" + now_handle)
+        # 得到所有窗口的句柄
+        all_handles = driver.window_handles
+        #print("++++", driver.window_handles[-1])
+        # 循环遍历所有新打开的窗口句柄，也就是说不包括主窗口
+        for handle in all_handles:
+            if handle != now_handle:
+                driver.switch_to.window(handle)
+                #print("新的窗口句柄:" + handle)
+    except Exception as e:
+        raise e
