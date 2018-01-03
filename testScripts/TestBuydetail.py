@@ -98,7 +98,7 @@ def TestBuydetail():
 
 
                 logging.info('"开始执行用例%s"' %caseRow[testCase_testCaseName-1].value)
-                logging.info('"测试用例共%s步:"' %stepNum)
+                logging.info('"测试用例共%s步:"' %(stepNum-1))
                 for step in xrange(2,stepNum + 1):
                     #因为步骤sheet中的第一行为标题行，无须执行
                     #获取步骤sheet中第step行对象

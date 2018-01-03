@@ -60,6 +60,14 @@ def close_browser(*arg):
     except Exception as e:
         raise e
 
+def close_window(*arg):
+    #关闭新打开的窗口
+    global driver
+    try:
+        driver.close()
+    except Exception as e:
+        raise e
+
 def sleep(sleepSeconds,*arg):
     # 强制等待
     try:
@@ -239,16 +247,43 @@ def waitVisibilityOfElementLocated(locationTpye,locatorExpression,*args):
 def current_window_handle(*args):
     global driver
     try:
-        #  得到当前窗口的句柄
+
+        '''#  得到当前窗口的句柄
         now_handle = driver.current_window_handle
-        #print("当前窗口句柄：" + now_handle)
+        print("当前窗口句柄：" + now_handle)
         # 得到所有窗口的句柄
         all_handles = driver.window_handles
-        #print("++++", driver.window_handles[-1])
-        # 循环遍历所有新打开的窗口句柄，也就是说不包括主窗口
-        for handle in all_handles:
-            if handle != now_handle:
-                driver.switch_to.window(handle)
-                #print("新的窗口句柄:" + handle)
+        print("++++", driver.window_handles[1])
+        new_window = driver.window_handles[1]'''
+        driver.switch_to.window(driver.window_handles[1])
+        print("新窗口标题:",driver.title)
     except Exception as e:
         raise e
+
+def new_window_handle(*args):
+    global driver
+    try:
+        #  得到当前窗口的句柄
+        #now_handle = driver.current_window_handle
+        #print("当前窗口句柄：" + now_handle)
+        # 得到所有窗口的句柄
+        #all_handles = driver.window_handles
+        #print("++++", driver.window_handles[-1])
+        # 循环遍历所有新打开的窗口句柄，也就是说不包括主窗口
+        #for handle in all_handles:
+          #  if handle != now_handle:
+               # driver.switch_to.window(handle)
+                #print("新的窗口句柄:" + handle)
+        #  得到当前窗口的句柄
+        now_handle = driver.current_window_handle
+        print("当前窗口句柄：" + now_handle)
+        # 得到所有窗口的句柄
+        all_handles = driver.window_handles
+        print("++++", driver.window_handles[-1])
+        new_window = driver.window_handles[-1]
+        driver.switch_to.window(driver.window_handles[-1])
+        print("新窗口标题:",driver.title)
+    except Exception as e:
+        raise e
+
+

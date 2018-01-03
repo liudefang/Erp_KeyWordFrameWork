@@ -2,6 +2,9 @@
 # @Time    : 2017-11-28 23:14
 # @Author  : mike.liu
 # @File    : ClipboardUtil.py
+import win32con
+import win32clipboard as w
+
 
 class Clipboard(object):
     '''模拟Windows设置粘贴板'''

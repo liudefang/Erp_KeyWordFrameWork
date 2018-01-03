@@ -58,14 +58,4 @@ class WaitUtil(object):
         except Exception as e:
             raise e
 
-if __name__ == '___main__':
-    from selenium import webdriver
-    #进行单元测试
-    driver = webdriver.Chrome(executable_path="D:\\Python34\\chromedriver")
-    driver.get("http://mail.126.com")
-    waitUtil = WaitUtil(driver)
-    waitUtil.frame_available_and_swith_to_it("id","x-URS-iframe")
-    e = waitUtil.visibility_element_located("xpath","//input[@name='email']")
-    e.send_keys("success")
 
-    driver.quit()
