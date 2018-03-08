@@ -7,12 +7,14 @@
 #定义全局driver变量
 import time
 
+import datetime
+from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 
 from config.VarConfig import chromeDriverFilePath, ieDriverFilePath, firefoxDriverFilePath
 from util.ClipboardUtil import Clipboard
-from util.DirAndTime import getCurrentTime, createCurrentDateDir
+from util.DirAndTime import getCurrentTime, createCurrentDateDir, getvalidityTime, getvalidityToTime, getnowTime
 from util.KeyBoardUtil import KeyboardKeys
 from util.ObjectMap import getElement
 from util.WaitUtil import WaitUtil
@@ -57,6 +59,14 @@ def close_browser(*arg):
     global driver
     try:
         driver.quit()
+    except Exception as e:
+        raise e
+
+def refresh_browser(*arg):
+    #刷新当前页面
+    global driver
+    try:
+        driver.refresh()
     except Exception as e:
         raise e
 
@@ -158,6 +168,15 @@ def getText(*arg):
     except Exception as e:
         raise e
 
+def move_to_element(locationTpye,locatorExpression,*arg):
+    global driver
+    try:
+        # 先让选项框弹出来
+        mouse=getElement(driver,locationTpye,locatorExpression)
+        #mouse = driver.find_element_by_xpath("//*[@id='app']/div/div/section/header/section/div[2]/div[4]/div/div/div[1]/span[1]")
+        ActionChains(driver).move_to_element(mouse).perform()
+    except Exception as e:
+        raise e
 def switch_to_frame(locationTpye,frameLocatorExpression,*arg):
     #切换进入frame
     global driver
@@ -205,6 +224,38 @@ def maximize_browser():
     global driver
     try:
         driver.maximize_window()
+    except Exception as e:
+        raise e
+
+
+
+    except Exception as e:
+        raise e
+def input_Fromtime(locationTpye,locatorExpression,*arg):
+    #在页面输入框输入数据
+    global driver
+    validityFromTime = getvalidityTime()
+    print(validityFromTime)
+    try:
+        getElement(driver,locationTpye,locatorExpression).send_keys(validityFromTime)
+    except BaseException as e:
+        raise e
+
+def input_Totime(*arg):
+    #获取页面标题
+    global driver
+    validityToTime = getvalidityToTime()
+    try:
+        driver.find_element_by_xpath("//*[@id='validityTo']").send_keys(validityToTime)
+    except Exception as e:
+        raise e
+
+def input_InsRatioDate(*arg):
+    #获取页面标题
+    global driver
+    InsRatioDateTime = getnowTime()
+    try:
+        driver.find_element_by_xpath("//*[@name='InsRatioDate']").send_keys(InsRatioDateTime)
     except Exception as e:
         raise e
 

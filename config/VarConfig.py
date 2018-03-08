@@ -17,7 +17,7 @@ parentDirPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 screenPicturesDir = parentDirPath + "\\exceptionpictures\\"
 
 #测试数据文件存放绝对路径
-dataFilePath = parentDirPath + "\\testData\\关键字驱动测试用例.xlsx"
+dataFilePath = parentDirPath + "\\testData\\产品部_关键字驱动测试用例.xlsx"
 
 #测试数据文件中，测试用例表中部分列对应的数字序号
 testCase_testCaseName = 2

@@ -22,6 +22,28 @@ def getCurrentTime():
     nowTime = timeStr.strftime('%H-%M-%S-%f')
     return nowTime
 
+def getnowTime():
+    # 获取当前时间
+    now = datetime.datetime.now()
+    nowTime = now.strftime("%Y-%m-%d") #直接截取当前时间的年月日
+    return nowTime
+
+def getvalidityTime():
+    # 获取当前时间
+    now = datetime.datetime.now()
+    # 协议有效时间 可使用hours,days,minutes，seconds，weeks等等
+
+
+    validityTime = (now + datetime.timedelta(days=-20)).strftime("%Y-%m-%d")  # 当前天数减去20天
+    return validityTime
+
+
+def getvalidityToTime():
+    # 获取当前时间
+    now = datetime.datetime.now()
+    validityToTime = (now + datetime.timedelta(days=+30)).strftime("%Y-%m-%d")  # 当前天数加上30天
+    return validityToTime
+
 #创建截图存放的目录
 def createCurrentDateDir():
     dirName = os.path.join(screenPicturesDir,getCurrentDate())
