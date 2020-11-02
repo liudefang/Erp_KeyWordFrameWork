@@ -7,7 +7,7 @@ import logging
 import logging.config
 from config.VarConfig import parentDirPath
 
-logging.config.fileConfig(parentDirPath + "\config\Logger.conf")
+logging.config.fileConfig(parentDirPath + "/config/Logger.conf")
 
 #选择一个日志格式
 logger = logging.getLogger("example02")
